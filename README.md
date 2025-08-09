@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+# Aplicación React Responsiva con TypeScript y Bootstrap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación de ejemplo que demuestra cómo crear una interfaz responsiva usando React, TypeScript y Bootstrap 5 con efecto Glassmorphism.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Diseño completamente responsivo
+- Efecto Glassmorphism en todos los componentes
+- Menú hamburguesa en mobile
+- Grid de tarjetas adaptable (1 columna mobile, 2 tablet, 3 desktop)
+- Tipografía y espaciado adaptativo
+- Despliegue automático en GitHub Pages
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19
+- TypeScript 5
+- Bootstrap 5
+- React-Bootstrap
+- Vite
+- GitHub Pages
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Enfoque de diseño responsivo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Utilicé Bootstrap 5 por su sistema de grid y componentes preconstruidos, combinado con estilos personalizados para el efecto Glassmorphism. Las clases responsivas como `col-12 col-md-6 col-lg-4` permiten adaptar el layout sin necesidad de media queries manuales.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Enlace de despliegue
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[Ver aplicación en vivo](https://javiii3er.github.io/mi-app-responsiva/)
+
+## Estructura del proyecto
+src/
+├── components/
+│ ├── Header/
+│ ├── Footer/
+│ └── Card/
+├── App.tsx
+├── main.tsx
+├── index.css
+└── vite-env.d.ts
+
+
+## Cómo ejecutarlo localmente
+
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
