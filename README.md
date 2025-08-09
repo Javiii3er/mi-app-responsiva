@@ -30,17 +30,6 @@ Utilicé Bootstrap 5 por su sistema de grid y componentes preconstruidos, combin
 
 [Ver aplicación en vivo](https://javiii3er.github.io/mi-app-responsiva/)
 
-## Estructura del proyecto
-src/
-├── components/
-│ ├── Header/
-│ ├── Footer/
-│ └── Card/
-├── App.tsx
-├── main.tsx
-├── index.css
-└── vite-env.d.ts
-
 
 ## Cómo ejecutarlo localmente
 
