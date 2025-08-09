@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Redirección</title>
+  <script>
+    const path = window.location.pathname.split('/');
+    const segmentCount = path.length - 1;
+    if (segmentCount > 0) {
+      window.location.href = '/mi-app-responsiva/#' + path.slice(2).join('/');
+    } else {
+      window.location.href = '/mi-app-responsiva/';
+    }
+  </script>
+</head>
+<body>
+  <p>Redireccionando...</p>
+</body>
+</html>
